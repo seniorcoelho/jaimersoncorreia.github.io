@@ -1,3 +1,5 @@
 # http://jaimersoncorreia.github.io
 
-Curruculum do meu amigo https://negreirost.github.io
+Link https://negreirost.github.io é uma pequena degustação que meu amigo Thiago Negreiros pode fazer
+
+Este repositório é destinado à matéria de Projetos Web
