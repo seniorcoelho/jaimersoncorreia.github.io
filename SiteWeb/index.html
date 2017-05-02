@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+	<!--Foi utilizado neste site:
+		HTML
+		CSS
+		Bootstrap
+		Font Awesome
+		light box
+		easing
+		Jarallax
+		JQuery
+		Responsible Slide
+		Smoothscrool
+	-->
+<html lang="pt">
+	<head>
+		<!--título-->
+		<title>Tribos indígenas do Amazonas</title>
+		<!--Multscreen - ajuste para várias telas-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--corrige erros de acentuaçãoi-->
+		<meta charset="utf-8">
+		<!--Adiciona o Javascript ao escopo-->
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!--Inserindo Bootstrap-->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<!--Inserindo CSS-->
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+		<!--Inserindo FontAwesome-->
+		<link href="css/font-awesome.css" rel="stylesheet"> 
+		<!--Pesquisar as fontes-->
+		<link href="//fonts.googleapis.com/css?family=Playball&amp;subset=latin-ext" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+		<!--Inserindo JS/Bootstrap-->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script> 
+	</head>
+
+<body>
+	<!--Início - Cabeçalho-->
+	<header>
+		<!--topo-->
+		<div class="banner-top">
+			<div class="slider">
+			<!--Callback JavaScript/Bootstrap-->
+				<div class="callbacks_container">
+					<ul class="rslides callbacks callbacks1" id="slider4">
+						<!--Apresentação das fotos-->
+						<li>
+							<div class="tia-top-banner">
+								<div class="container">
+									<div class="tia-banner-info">
+										<h3>As tribos do Amazonas<span>Suas culturas e costumes</span></h3>
+										<p>Você sabem quais são as tribos que habitam ou habitavam no Amazonas? E quais os seus costumes? Como o Brasil era povoado na época do Descobrimento? Eles são mais numerosos e diversificados do que se pode imaginar, e possuem a suas própias linguas, costumes, pratos típicos, etc</p>
+									</div>	
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="tia-top-banner tia-top-banner1">
+								<div class="container">
+									<div class="tia-banner-info">
+										<h3>Parte do Brasil <span>E devem ser respeitados</span></h3>
+										<p>Os indígenas no Brasil, tem constitucionalmente garantidos conforme o Artigo 231 da Constituição Federal a sua organização social, costumes, lingua, crenças e tradições, e os direitos originários sobre as teras que tradicionalmente ocupam, competindo a União demarcá-las, proteger e fazer respeitar todos os seus bens.</p>
+									</div>	
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="tia-top-banner tia-top-banner2">
+								<div class="container">
+									<div class="tia-banner-info">
+										<h3>Diferentes, mas iguais <span>O que elas possuem em comum?</span></h3>
+										<p>As tribos do Amazonas são dispersas, grande maioria, próximo aos leitos dos ros e igarapés, devido elas viverem da caça e pesca e pelo fato do Rio Amazonas possuir uma das maiores e ricas diversidades de peixes, isso favore a vida nessas localizações</p>
+									</div>	
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--Quebra/Seapra do próximo elemento na ordem.-->
+				<div class="clearfix"> </div>
+				<script src="js/responsiveslides.min.js"></script>
+				<script>
+					// Não deu certo
+					//"$(window).load(function() {"
+					$(function () {
+					  // rodando os slides
+						$("#slider4").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:true,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						});
+				
+					});
+				</script>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="header">
+				<div class="container">
+					<div class="header-left">
+						<div class="tia-logo">
+							<h1>
+								<a href="index.html">Tribos indígenas <span><sup>Amazonas</sup></span></a>
+							</h1>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!--Menu de navegação/links-->
+			<div class="header-bottom">
+				<div class="container">
+					<div class="top-nav">
+						<nav class="navbar navbar-default">
+							<!--Controle do menu-->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<!--Menu-->
+							<div class="collapse navbar-collapse" id="example-navbar-collapse1">
+								<ul class="nav navbar-nav">
+									<li><a class="active list-border" href="index.html">Início</a></li>
+									<li><a href="gallery.html">Fotos</a></li>
+									<li><a class="list-border1" href="contact.html">Contato</a></li>
+								</ul>	
+								<div class="clearfix"> </div>
+							</div>	
+						</nav>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="init-info">
+		<div class="container">
+			<div class="tia-info-grids">
+				<div class="col-md-5 tia-info-left">
+					<h2>O alimento <span>mais comum deles</span></h2>
+					<p>O alimento mais comum nos riuos do Amazonas é o pirarucu, peixe que pode chegar a 120 k. e a mais de 2m. de tamanho, também tem o cupuaçu, fruta típuca que é encontrada pelas entranhas da floresta amazônica.</p>
+				</div>
+				<div class="col-md-7 side-image">
+					<div class="side-image-grids">
+						<div class="col-sm-5 side-image-img">
+							<img src="imagens/4.jpg" alt="" />
+						</div>
+						<div class="col-sm-7 side-image-img1">
+							<img src="imagens/5.jpg" alt="" />
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="name-grid">
+		<div class="container">
+			<div class="grid-info">
+				<div class="col-md-4 grid-format-left">
+					<h3>Algumas <span>tribos</span></h3>
+					<p>As tirbos do Amazonas possuem seus própios dialetos, muitos deles cirados por elas mesmas, sendo uma das dificuldades para se comunicar com algumas delas, outras utilizam o própio Tupi-guarani como dialeto natural.<br>
+					A disposição dos povos indígenas do Amazonas fazem com que as terras sejam inalienáveis e indisponíveis, e os direitos sobre elas sejam imprescristíveis, sendo vedada a remoção dos grupos indígenas, salvo ad referendum do Congresso Nacional, em caso de catástrofe, epidemias, que ponha em risco a sua população, ou no interesse da soberania do País. Garantindo o retorno imediato logo que cesse o risco.</p>
+				</div>
+				<div class="col-md-8 grid-format-right">
+					<div class="col-md-6 grid-format-info">
+						
+						<h4>APIAKÁ</h4>
+						<p><b>Nomes alternativos:</b> Apiacá<br>
+						<b>Classificação lingüística:</b> Tupi-guarani<br>
+						<b>População:</b> 192 (Funasa – 2001)<br>
+						<b>Local:</b> Amazonas, Mato Grosso, Pará</p>
+					</div>
+					<div class="col-md-6 grid-format-info agile-name-grid1">
+						
+						<h4>JAMAMADI</h4>
+						<p><b>Nomes alternativos:</b> Yamamadí, Kanamanti, Canamanti<br>
+						<b>Classificação lingüística:</b> Arawak<br>
+						<b>População:</b> 884 (Funasa – 2006)<br>
+						<b>Local:</b> Amazonas, espalhados sobre 512.000 km2</p>
+					</div>
+					<div class="col-md-6 grid-format-info">
+						
+						<h4>KAXARARI</h4>
+						<p><b>Nomes alternativos:</b> Kaxariri<br>
+						<b>Classificação lingüística:</b> Pano<br>
+						<b>População:</b> 323 (Funasa – 2006)<br>
+						<b>Local:</b> Alto Rio Marmelo, tributário do Rio Abuna, Acre, Rondônia, Amazonas.</p>
+					</div>
+					<div class="col-md-6 grid-format-info">
+						
+						<h4>TICUNA</h4>
+						<p><b>Nomes alternativos:</b> Tikuna, Tukuna<br>
+						<b>Classificação lingüística:</b> Tikuna<br>
+						<b>População:</b> 35.000 (2008)<br>
+						<b>Local:</b> Amazonas</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tia-rivers">
+		<div class="container">
+			<div class="wthree-tia-rivers-grids">
+				<div class="col-md-4 grid-format-left agile-tia-rivers-left">
+					<h3>Onde eles <span>moram</span></h3>
+					<p>Devido a grande riqueza e diversidade de alimentos próximos aos rios do Amazonas, grande parte das tribos moram próximas aos seus leitos, distribuindo a terra de tal forma a não atrapalhar outra tribo indígena.</p>
+				</div>
+				<div class="col-md-8 agile-tia-rivers-right">
+					<div class="col-md-6 agile-tia-rivers-right-info">
+						<div class="col-md-6 agile-tia-rivers-img">
+							
+						</div>
+						<div class="col-md-6 agile-tia-rivers-img-info">
+							<h5><a href="single.html">TENHARIN</a></h5>
+							<div class="tia-border-style"> </div>
+							<p>Consistem em três grupos indígenas que vivem no curso m+edio do Madeira, ao sul do Amazonas</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 agile-tia-rivers-right-info">
+						<div class="col-md-6 agile-tia-rivers-img agile-tia-rivers-img1">
+							
+						</div>
+						<div class="col-md-6 agile-tia-rivers-img-info">
+							<h5><a href="single.html">KATUKIANA</a></h5>
+							<div class="tia-border-style"> </div>
+							<p>No Amazonas, vivem na região do triângulo Jutaí-Juruá-Solimões.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="copyright">
+			<div class="container">
+				<p>© 2017 TIA . Tribos indígenas do Amazonas | Designed by <a href="https://www.facebook.com/julyana.jcm" target="_blank">Julyana Martins</a></p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+	</script>
+</body>	
+</html>
+
+<!-- testes-->
