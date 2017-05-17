@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+	display: block;
+	font-family: Times;
+}
+body{
+	margin-top: 20px;
+	background: #708090;
+}
+h1{
+	text-align: center;
+}
+
+label{
+	font-size: 15pt;
+}
+#centro{
+	background-color: #C1CDCD;
+	width: 500px;
+	height: 300px;
+	margin: auto;
+	border-radius: 25px 0px 25px 0px;
+
+}
+.campos{
+	margin: 8px 50px 8px 50px;
+}
+
+input[type="text"],input[type="password"]{
+	width: 400px;
+	height: 30px;
+	border-radius: 10px;
+	margin: 10px 0px 10px 0px;
+}
+input[type="reset"],input[type="submit"]{
+	width: 100px;
+	height: 30px;
+	border-radius: 10px 0px 10px 0px;
+	display: inline-block;
+	background-color: #FFD700;
+	font-size: 15pt;
+}
+#direita{
+	margin-top: 15px;
+	margin-left: 250px;
+}
+input[type="reset"]:hover,input[type="submit"]:hover{
+	background-color: #00FF00;
+}
