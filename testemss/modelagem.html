@@ -22,11 +22,11 @@
 				$scope.quantidades.length = 0;
 				qtde = quantidade;
 
-				//x = 8;
-				x = new Date().getTime();//194 pega semente	
+				x = 8;
+				//x = new Date().getTime();//194 pega semente	
 				for (var j = 0; j < qtde + 1 ; j++) {
-					x = (34 * x + 91) % 78;
-					//x = (9 * x + 1) % 17;
+					//x = (34 * x + 91) % 78;
+					x = (9 * x + 1) % 17;
 					//78 é o número máximo dos aleatorio gerados
 					$scope.quantidades[j] = [j,x];
 					
