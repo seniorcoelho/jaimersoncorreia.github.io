@@ -18,14 +18,13 @@
 		angular.module("numerosAleatorios").controller("numerosAleatoriosa",function ($scope) {
 			$scope.app = "Gerador de Números Aleatórios";
 			$scope.quantidades = [];
-			
+			x = new Date().getTime();
+			$scope.semente = x;
 
 			$scope.geradorAleatorio = function(quantidade) {
 				$scope.quantidades.length = 0;
 				qtde = quantidade;
-
-				//x = 8;
-				x = new Date().getTime();//194 pega semente	
+				
 				console.log(x);
 				for (var j = 0; j < qtde + 1 ; j++) {
 					x = (34 * x + 91) % 78;
@@ -61,6 +60,10 @@
 			<tr ng-repeat="quantidade in quantidades">
 				<td>{{quantidade[0]}}</td>
 				<td>{{quantidade[1]}}</td>
+			</tr>
+			<tr>
+				<td> Semente </td>
+				<td> {{semente}} </td>
 			</tr>
 		</table>
 		
